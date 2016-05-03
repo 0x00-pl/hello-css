@@ -1,0 +1,30 @@
+
+/* for lable */
+button{
+    
+}
+
+/* for id */
+#btn1{
+    
+}
+
+/* for class */
+.btn{
+    /*基本尺寸 width height*/
+    /*内边距 padding*/
+        /*padding-[left|right|top|bottom]*/
+        /*padding: 1px 2px 3px 4px*/
+        /*=== top1 right2 bottom3 left4*/
+        /**/
+        /*padding: 1px 2px*/
+        /*=== top1 bottom1 left2 right2*/
+        
+    /*边框 border*/
+    /*外边距 margin*/
+    
+    
+    background-color: #00F;
+    border: none;
+    padding: 10px;
+}
