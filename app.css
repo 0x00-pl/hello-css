@@ -25,6 +25,69 @@ button{
     
     
     background-color: #00F;
+    color: #FFF;
     border: none;
     padding: 10px;
+    
+    /*display: [block|inline|inline-block|none|...]*/
+    /*div's display is block by default*/
+    /*span's display is inline by default*/
+    /*inline does not have height*/
+}
+
+.color-red{
+    color: #F00;
+}
+
+/*水平居中 for display:block */
+.center{
+    text-align: center;
+}
+
+.span{
+    /*外边距*/
+    margin: 0px 10px;
+    /*height: 100px;*/
+    display: inline-block;
+}
+
+.france-text-block{
+    width: 200px
+}
+.france-text-block .hot-tag{
+    display: inline-block;
+    margin: 0px 5px;
+    padding: 4px;
+    color: #FFF;
+    background-color: #F00;
+}
+
+.four-squares {
+    text-align: center;
+}
+.four-squares .item{
+    display: inline-block;
+    width: 24%;
+    height: 100px;
+    color: lightgray;
+    padding: 30px;
+    border: 10px solid;
+    border-color: dimgray;
+    box-sizing: border-box;
+}
+.four-squares .item-r{
+    background-color: red
+}
+.four-squares .item-w{
+    background-color: white
+}
+.four-squares .item-b{
+    background-color: black
+}
+.four-squares .item-y{
+    background-color: yellow
+}
+
+.div{
+    box-sizing: content-box;
 }
