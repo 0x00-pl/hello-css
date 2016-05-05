@@ -67,10 +67,25 @@ button{
 }
 .four-squares .item{
     display: inline-block;
-    width: 24%;
+    width: 25%;
     height: 100px;
     color: lightgray;
     padding: 30px;
+    
+    /*border: border-width border-style border-color|initial|inherit;*/
+    /*border-style:none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit;*/
+        /*none 	Default value. Specifies no border 	*/
+        /*hidden 	The same as "none", except in border conflict resolution for table elements 	*/
+        /*dotted 	Specifies a dotted border 	*/
+        /*dashed 	Specifies a dashed border 	*/
+        /*solid 	Specifies a solid border 	*/
+        /*double 	Specifies a double border 	*/
+        /*groove 	Specifies a 3D grooved border. The effect depends on the border-color value 	*/
+        /*ridge 	Specifies a 3D ridged border. The effect depends on the border-color value 	*/
+        /*inset 	Specifies a 3D inset border. The effect depends on the border-color value 	*/
+        /*outset 	Specifies a 3D outset border. The effect depends on the border-color value*/
+        /*initial 	Sets this property to its default value. Read about initial 	*/
+        /*inherit 	Inherits this property from its parent element. Read about inherit*/
     border: 10px solid;
     border-color: dimgray;
     box-sizing: border-box;
@@ -88,6 +103,93 @@ button{
     background-color: yellow
 }
 
-.div{
+.centering{
+    /*box-sizing: content-box|border-box|initial|inherit;*/
+        /*content-box 	Default. The width and height properties (and min/max properties) includes only the content. Border, padding, or margin are not included*/
+        /*border-box 	The width and height properties (and min/max properties) includes content, padding and border, but not the margin*/
+        /*initial 	Sets this property to its default value. Read about initial*/
+        /*inherit 	Inherits this property from its parent element. Read about inherit*/
     box-sizing: content-box;
+}
+
+.positioning {
+    /*position: static|absolute|fixed|relative|initial|inherit;*/
+        /*static 	Default value. Elements render in order, as they appear in the document flow 	*/
+        /*absolute 	The element is positioned relative to its first positioned (not static) ancestor element 	*/
+        /*fixed 	The element is positioned relative to the browser window 	*/
+        /*relative 	The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position 	*/
+        /*initial 	Sets this property to its default value. Read about initial 	*/
+        /*inherit 	Inherits this property from its parent element. Read about inherit*/
+    top: 10px;
+    left: 10px;
+    z-index: 99;
+}
+
+.positioning .static { position: static; }
+.positioning .absolute { position: absolute; }
+.positioning .fixed { position: fixed; }
+.positioning .relative { position: relative; }
+
+
+
+.z-index-example {
+    position: relative;
+}
+
+.z-index-example .item{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border: 5px solid black;
+    background-color: aqua;
+}
+
+.z-index-example .my-z-index {
+    z-index: 3;
+}
+
+.i-am-the-center {
+    /*display: inline-block;*/
+    /*text-align: center;*/
+    
+    width: 300px;
+    height: 200px;
+    
+    background-color: aqua;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: - height/2;
+    margin-left: - width/2; 
+    /*transform: translate(-50%, -50%);*/
+}
+
+
+.alert-background {
+    position: absolute;
+    /*top: 0;*/
+    /*left: 0;*/
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.28);
+    z-index: 99999;
+}
+
+.alert-background .alert-box {
+    width: 200px;
+    height: 50px;
+    background-color: aqua;
+    border: 2px solid dimgray;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 100000;
+    
+    
 }
